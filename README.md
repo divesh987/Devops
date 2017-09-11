@@ -8,7 +8,7 @@
 - Vagrant ssh
 
 ### Virtual Box
-Install [Vitural Box](https://www.virtualbox.org/wiki/Downloads) onto your machine, as it supports your enviroment.
+Install [Virtual Box](https://www.virtualbox.org/wiki/Downloads) onto your machine, as it supports your enviroment.
 
 ### Install Vagrant
 You will need to install [Vagrant](https://www.vagrantup.com/downloads.html) to get started. Click on Vagrant and check your operating System installation. Once downloaded and installed, pull this repository and move to the next part of the set up.
