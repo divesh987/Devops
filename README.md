@@ -1,4 +1,4 @@
-# DevOp-3
+# DevOps
 
 ## Set up
 
