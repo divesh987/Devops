@@ -18,7 +18,7 @@ Once this repository is pulled on to your device, run the command:
 
 ```
 git clone git@github.com:divesh987/Devops.git 
-cd DevOp
+cd Devops
 vagrant up
 
 ```
