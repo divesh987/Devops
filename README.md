@@ -1,4 +1,4 @@
-# DevOps
+# DevOps	
 
 ## Set up
 
@@ -6,8 +6,6 @@
 - Install Vagrant
 - Vagrant Up
 - Vagrant ssh
-- Update apt-get
-- Install Nginx
 
 ### Virtual Box
 Install [Vitural Box](https://www.virtualbox.org/wiki/Downloads) onto your machine, as it supports your enviroment.
@@ -19,7 +17,7 @@ You will need to install [Vagrant](https://www.vagrantup.com/downloads.html) to 
 Once this repository is pulled on to your device, run the command: 
 
 ```
-git clone git@github.com:Melson012/DevOp.git 
+git clone git@github.com:divesh987/Devops.git 
 cd DevOp
 vagrant up
 
