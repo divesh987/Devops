@@ -6,5 +6,5 @@
 * Run the command ```vagrant ssh``` to login to your  virtual machine. 
 * Run the command ```sudo apt-get update``` to make sure package sources are up to date.
 * Your development environment is now ready !
-* Go to the url: <http://development.local/> to run test your server
+* Go to the url: <http://development.local/> to test your server
 
