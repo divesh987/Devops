@@ -3,7 +3,6 @@
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo useradd --home /home/ubuntu/app app
 sudo chown -R app:app app
 
 sudo apt-get install nginx -y
