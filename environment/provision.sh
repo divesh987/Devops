@@ -1,9 +1,8 @@
 #!/bin/bash
 
-
+export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo chown -R app:app app
 
 sudo apt-get install nginx -y
 sudo rm /etc/nginx/sites-available/default 
