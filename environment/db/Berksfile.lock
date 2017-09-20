@@ -1,0 +1,7 @@
+DEPENDENCIES
+  db
+    git: git@github.com:divesh987/cookbook-db.git
+    revision: cfc05652e68e2daa5f9f8f392c9359aee016c955
+
+GRAPH
+  db (1.0.1)

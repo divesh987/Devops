@@ -1,0 +1,7 @@
+DEPENDENCIES
+  web
+    git: git@github.com:divesh987/cookbook-web.git
+    revision: e5eea77c17e7fac14066e9f6ddd6df37c1ac4da3
+
+GRAPH
+  web (1.0.0)

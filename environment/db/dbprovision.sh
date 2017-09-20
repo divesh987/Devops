@@ -3,8 +3,10 @@ sudo echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mo
 
 
 sudo apt-get update -y
-sudo apt-get upgrade -y
 sudo apt-get install -y mongodb-org
 sudo rm /etc/mongod.conf
 sudo cp /home/ubuntu/app/environment/mongod.conf /etc/mongod.conf
-sudo service mongod start
+sudo cp /home/ubuntu/app/environment/mongod.service /lib/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl start mongod
+sudo systemctl enable mongod
