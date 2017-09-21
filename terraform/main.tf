@@ -90,7 +90,7 @@ data "aws_ami" "web" {
 
 
 resource "aws_instance" "div-web-instance" {
-  ami           = "${aws_ami.web.id}"
+  ami           = "${data.aws_ami.web.id}"
   instance_type = "t2.micro"
   vpc_security_group_ids= ["${aws_security_group.web.id}"] 
   subnet_id = "${aws_subnet.web.id}"
