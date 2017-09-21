@@ -73,11 +73,24 @@ resource "aws_security_group" "db" {
     Name = "Div Web"
   }
 }
+data "aws_ami" "web" {
+  filter {
+    name   = "state"
+    values = ["available"]
+  }
+
+  filter {
+    name   = "name"
+    values = ["div-web-prod*"]
+  }
+
+  most_recent = true
+}
 
 
 
 resource "aws_instance" "div-web-instance" {
-  ami           = "ami-33dbc857"
+  ami           = "${aws_ami.web.id}"
   instance_type = "t2.micro"
   vpc_security_group_ids= ["${aws_security_group.web.id}"] 
   subnet_id = "${aws_subnet.web.id}"
