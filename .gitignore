@@ -50,3 +50,6 @@ build-iPhoneSimulator/
 .rvmrc
 /.vagrant/
 /terraform/.terraform
+/terraform/terraform.tfstate
+/terraform/terraform.tfstate.backup
+
