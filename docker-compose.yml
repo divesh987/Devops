@@ -1,0 +1,28 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=mongodb://mongo:27017/posts
+  mongo:
+    build: ../db-docker
+    ports:
+      - "27018:27017"
+# version: "3"
+# services:
+#   app:
+#     build: .
+#     ports:
+#       - "3000:3000"
+#     links:
+#       - mongo
+#     depends_on:
+#       - db-ready
+#     mongo:
+#       image: mongo
+#       volumes:
+#         - /db:home/ubuntu/app/db
+#       ports:
+#        - "27018:27017"
